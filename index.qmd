@@ -1,0 +1,36 @@
+---
+title: "Lourdes Violino"
+image: profile.png
+about:
+  template: trestles
+  image-width: 14em
+  image-shape: round
+  links:
+    - icon: github
+      text: GitHub
+      href: https://github.com/tu-usuario
+    - icon: linkedin
+      text: LinkedIn
+      href: https://linkedin.com/in/tu-usuario
+    - icon: file-earmark-pdf
+      text: Descargar CV
+      href: cv.pdf
+---
+
+## Perfil
+
+Estudiante de Licenciatura en Economía en la **Universidad Nacional de Córdoba (FCE UNC)**, con orientación hacia métodos cuantitativos, econometría y ciencia de datos.
+
+---
+
+### Educación
+
+* **Licenciatura en Economía**  
+  Facultad de Ciencias Económicas, Universidad Nacional de Córdoba *(en curso)*
+
+---
+
+### Herramientas & Métodos
+
+* **Lenguajes & Entornos:** R, Python, EViews, LaTeX.
+* **Áreas de interés:** Series de tiempo, inferencia causal, modelos de regularización (Ridge/Lasso) y econometría aplicada.

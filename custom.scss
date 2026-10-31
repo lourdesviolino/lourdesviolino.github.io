@@ -1,0 +1,28 @@
+/*-- scss:defaults --*/
+/* Paleta base neutra y limpia */
+$body-color: #2b2b2b;              /* Texto general en gris grafito oscuro */
+$link-color: #2b2b2b;              /* Los links quedan neutros por defecto */
+
+/* Acento fucsia reservado solo para interacción */
+$primary: #c2185b;                 /* Fucsia elegante/frambuesa para botones */
+$link-hover-color: #d81b60;        /* Fucsia solo al pasar el mouse por encima */
+
+/*-- scss:rules --*/
+/* Detalle: una línea sutil fucsia debajo de los títulos de sección */
+h2 {
+  border-bottom: 1.5px solid rgba(216, 27, 96, 0.35);
+  padding-bottom: 0.25rem;
+}
+
+/* Los botones de tu perfil: fondo limpio con borde y texto que reaccionan con acento */
+.about-links .btn {
+  border-color: #e0e0e0;
+  color: #333333;
+  transition: all 0.2s ease-in-out;
+}
+
+.about-links .btn:hover {
+  border-color: #d81b60;
+  color: #d81b60;
+  background-color: rgba(216, 27, 96, 0.04);
+}

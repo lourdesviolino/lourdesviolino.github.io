@@ -1,0 +1,30 @@
+project:
+  type: website
+  output-dir: _site
+
+website:
+  title: "Lourdes Violino"
+  navbar:
+    left:
+      - href: index.qmd
+        text: "Inicio"
+      - href: portfolio.qmd
+        text: "Portfolio"
+      - href: cv.qmd
+        text: "CV"
+    right:
+      - icon: github
+        href: https://github.com/lourdesviolino
+      - icon: linkedin
+        href: https://www.linkedin.com/in/lourdes-violino-b735b0424/
+      - icon: envelope
+        href: lourdesviolino@gmail.com
+
+format:
+  html:
+    theme:
+      - lux
+      - custom.scss
+    toc: true
+    code-fold: show
+    code-copy: true
