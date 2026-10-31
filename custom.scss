@@ -1,55 +1,77 @@
 /*-- scss:defaults --*/
-/* Paleta base neutra y limpia (Modo Claro) */
-$body-color: #2b2b2b;              /* Texto general en gris grafito oscuro */
-$link-color: #2b2b2b;              /* Links neutros por defecto */
-
-/* Acento fucsia reservado solo para interacción */
-$primary: #c2185b;                 /* Fucsia elegante/frambuesa para botones */
-$link-hover-color: #d81b60;        /* Fucsia solo al pasar el mouse */
+/* Colores de acento */
+$primary: #c2185b;
+$link-hover-color: #d81b60;
 
 /*-- scss:rules --*/
-/* Detalle: línea sutil fucsia debajo de los títulos de sección */
+/* Detalle fucsia debajo de los títulos principales */
 h2 {
-  border-bottom: 1.5px solid rgba(216, 27, 96, 0.35);
+  border-bottom: 1.5px solid rgba(216, 27, 96, 0.4);
   padding-bottom: 0.25rem;
 }
 
-/* Botones de perfil en modo claro */
-.about-links .btn {
-  border-color: #e0e0e0;
-  color: #333333;
-  transition: all 0.2s ease-in-out;
+/* ===================================================
+   MODO CLARO (Específico cuando la página está en blanco)
+   =================================================== */
+body:not(.quarto-dark) {
+  color: #2b2b2b;
 
-  &:hover {
-    border-color: #d81b60;
-    color: #d81b60;
-    background-color: rgba(216, 27, 96, 0.08);
+  h1, h2, h3, h4, .sidebar-title {
+    color: #111827;
+  }
+
+  a {
+    color: #2b2b2b;
+    &:hover {
+      color: #d81b60;
+    }
+  }
+
+  .about-links .btn {
+    border-color: #d1d5db;
+    color: #374151;
+    &:hover {
+      border-color: #c2185b;
+      color: #c2185b;
+      background-color: rgba(194, 24, 91, 0.05);
+    }
   }
 }
 
-/* =========================================
-   ADAPTACIONES PARA MODO OSCURO (.quarto-dark)
-   ========================================= */
+/* ===================================================
+   MODO OSCURO (Específico cuando la página está oscura)
+   =================================================== */
 body.quarto-dark {
-  /* Mantener el fucsia visible sobre fondo oscuro */
-  a:hover {
-    color: #f06292;
+  color: #e5e7eb !important;
+
+  h1, h2, h3, h4, .sidebar-title {
+    color: #ffffff !important;
   }
 
-  /* Línea debajo de los h2 con mejor visibilidad en negro/gris */
+  p, li, span, .text-muted {
+    color: #d1d5db !important;
+  }
+
   h2 {
-    border-bottom: 1.5px solid rgba(240, 98, 146, 0.45);
+    border-bottom: 1.5px solid rgba(240, 98, 146, 0.5);
   }
 
-  /* Botones del perfil adaptados al fondo oscuro */
+  a {
+    color: #f472b6;
+    &:hover {
+      color: #fb7185;
+    }
+  }
+
   .about-links .btn {
-    border-color: #444444;
-    color: #e0e0e0;
+    border-color: #4b5563;
+    color: #f3f4f6;
+    background-color: rgba(255, 255, 255, 0.04);
 
     &:hover {
-      border-color: #f06292;
-      color: #f06292;
-      background-color: rgba(240, 98, 146, 0.12);
+      border-color: #f472b6;
+      color: #f472b6;
+      background-color: rgba(244, 114, 182, 0.15);
     }
   }
 }
